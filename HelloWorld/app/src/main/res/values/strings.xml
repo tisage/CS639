@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string name="hello_world">Hello Tianyu Wang\n
+        And\n
+        Welcome in CS 639 Summer 2015\n
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
