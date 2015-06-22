@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import org.apache.http.HttpConnection;
-
 import android.os.AsyncTask;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -29,17 +27,16 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContntView(R.layout.image_layout);
 
         ImageDownloader imageDownloader = new ImageDownloader();
-        imageDownloader.execute("http://wanderingoak.net/bridge.png");
+        imageDownloader.execute("https://raw.githubusercontent.com/tisage/CS6392015/master/AsyncTaskProject/Jinzhou.jpg");
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
     private class ImageDownloader extends AsyncTask<String, Integer, Bitmap> {
         @Override
         protected void onPreExecute(){
-
+        // Pre
         }
         @Override
         protected Bitmap doInBackground(String... params){
@@ -71,7 +68,7 @@ public class MainActivityFragment extends Fragment {
         }
         @Override
         protected void onCancelled() {
-            //
+        // Cancel
         }
 
 
