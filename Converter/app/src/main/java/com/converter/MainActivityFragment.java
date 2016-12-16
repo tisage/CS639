@@ -31,11 +31,8 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
 
         super.onCreate(savedInstanceState);
         View myView = inflater.inflate(R.layout.fragment_main, container, false);
-        // View obj.
 
         dollars = (EditText) myView.findViewById(R.id.dollars);
-        // use View object myView to apply for fragment
-        
         francs = (EditText) myView.findViewById(R.id.francs);
         dtof = (RadioButton) myView.findViewById(R.id.ttof);
         dtof.setChecked(true);

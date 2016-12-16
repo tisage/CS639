@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">RSS Reader</string>
+    <string name="notification">Loading...</string>
+    <string name="detail">RSS Details:-</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
